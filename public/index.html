@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="text-gray-600 font-body">
-    <div> <!-- Content Wrapper -->
+    <div class="grid"> <!-- Content Wrapper -->
         <div>
-            <nav>
+            <nav >
                 <div>
                     <h1 class="font-bold uppercase p-4 border-b border-gray-100">
-                        <a href="/">Tailwindcss Dashboard</a>
+                        <a href="/" class="">Tailwindcss Dashboard</a>
                     </h1>
                 </div>
                 <ul>
@@ -35,10 +35,10 @@
             </nav>
         </div> <!-- End Nav -->
 
-        <main class="px-16 py-6">
-            <div>
+        <main class="px-16 py-6 bg-gray-100 md: col-span-2"> 
+            <div class="flex justify-center md:justify-end"> <!-- small screen = justify-center, md screen = justify-end -->
                 <a href="#" class="text-primary">Login</a>
-                <a href="#" class="text-primary">Sign Up</a>
+                <a href="#" class="text-primary ml-2">Sign Up</a>
             </div>
 
             <header>
@@ -48,13 +48,38 @@
 
             <div>
                 <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Latest Recipes</h4>
-                <div class="mt-8">
-                    <!-- Cards go here -->
-                    <div>
-                        <img src="img/grilled_chicken.png" alt="grilled_chicken">
-                        <div>
-                            <span>5 Bean Chill Stew</span>
-                            <span>Recipe By Mario</span>
+                <div class="mt-8 grid lg:grid-cols-3 gap-10">
+                    <!-- First Card -->
+                    <div class="card"> <!-- Using @apply directive -->
+                        <img src="img/grilled_chicken.png" alt="grilled_chicken" class="w-full h-32 sm:h-48 object-cover">
+                        <div class="m-4"> 
+                            <span class="font-bold">5 Bean Chill Stew</span>
+                            <span class="block text-gray-500 text-sm">Recipe By Mario</span>
+                        </div>
+                        <div class="badge">
+                            <span>25 mins</span>
+                        </div>
+                    </div>
+                     <!-- Second Card -->
+                    <div class="card"> <!-- Using @apply directive -->
+                        <img src="img/grilled_chicken.png" alt="grilled_chicken" class="w-full h-32 sm:h-48 object-cover">
+                        <div class="m-4"> 
+                            <span class="font-bold">Seafood Aglio Olio</span>
+                            <span class="block text-gray-500 text-sm">Recipe By Mario</span>
+                        </div>
+                        <div class="badge">
+                            <span>25 mins</span>
+                        </div>
+                    </div>
+                    <!-- Third Card -->
+                    <div class="card"> <!-- Using @apply directive -->
+                        <img src="img/grilled_chicken.png" alt="grilled_chicken" class="w-full h-32 sm:h-48 object-cover">
+                        <div class="m-4"> 
+                            <span class="font-bold">Carbonara</span>
+                            <span class="block text-gray-500 text-sm">Recipe By Mario</span>
+                        </div>
+                        <div class="badge">
+                            <span>25 mins</span>
                         </div>
                     </div>
                 </div>
@@ -63,10 +88,9 @@
 
                 <div class="mt-8">
                     <!-- Cards go here (work on this later) -->
-
                 </div>
 
-                <div> <!-- Parent Div -->
+                <div class="flex justify-center"> <!-- Parent Div -->
                     <div class="bg-secondary-100 text-secondary-200">Load More</div>
                 </div>
 
