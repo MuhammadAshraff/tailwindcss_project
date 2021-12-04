@@ -1,0 +1,154 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="antialiased bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400">
+  <header>
+     <nav class="
+          flex flex-wrap
+          items-center
+          justify-between
+          w-full
+          py-4
+          md:py-0
+          px-4
+          text-lg text-gray-700
+          bg-white
+          rounded">
+        <div>
+            <h1 class=" uppercase p-4 border-b border-gray-100">
+                <div class="flex">
+                    <div class="px-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                        </svg>
+                    </div>
+                    <a href="/" class=""> <b>Luna</b>bistro</a>
+                </div>
+                
+            </h1>
+        </div>
+       
+         <svg
+            xmlns="http://www.w3.org/2000/svg"
+            id="menu-button"
+            class="h-6 w-6 cursor-pointer md:hidden block"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+       
+       <div class="hidden w-full md:flex md:items-center md:w-auto" id="menu">
+          <ul
+            class="
+              pt-4
+              text-base text-gray-700
+              md:flex
+              md:justify-between 
+              md:pt-0"
+          >
+            <li>
+              <a class="md:p-4 py-2 block hover:text-purple-400" href="#"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a class="md:p-4 py-2 block hover:text-purple-400" href="#"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a class="md:p-4 py-2 block hover:text-purple-400" href="#"
+                >Customers</a
+              >
+            </li>
+            <li>
+              <a class="md:p-4 py-2 block hover:text-purple-400" href="#"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                class="md:p-4 py-2 block hover:text-purple-400 text-purple-500"
+                href="#"
+                >Sign Up</a
+              >
+            </li>
+          </ul>
+        </div>
+    </nav>
+  </header>
+
+    <div>
+        <div class="m-8 grid lg:grid-cols-3 gap-10">
+            <!-- First Card -->
+            <div class="card"> <!-- Using @apply directive -->
+                <img src="img/grilled_chicken.png" alt="grilled_chicken" class="w-full h-32 sm:h-48 object-cover">
+                <div class="m-4"> 
+                    <span class="font-bold">5 Bean Chill Stew</span>
+                    <span class="block text-gray-500 text-sm">Recipe By Mario</span>
+                </div>
+                <div class="badge">
+                    <span>25 mins</span>
+                </div>
+            </div>
+            <!-- Second Card -->
+            <div class="card"> <!-- Using @apply directive -->
+                <img src="img/grilled_chicken.png" alt="grilled_chicken" class="w-full h-32 sm:h-48 object-cover">
+                <div class="m-4"> 
+                    <span class="font-bold">Seafood Aglio Olio</span>
+                    <span class="block text-gray-500 text-sm">Recipe By Mario</span>
+                </div>
+                <div class="badge">
+                    <span>25 mins</span>
+                </div>
+            </div>
+            <!-- Third Card -->
+            <div class="card"> <!-- Using @apply directive -->
+                <img src="img/grilled_chicken.png" alt="grilled_chicken" class="w-full h-32 sm:h-48 object-cover">
+                <div class="m-4"> 
+                    <span class="font-bold">Carbonara</span>
+                    <span class="block text-gray-500 text-sm">Recipe By Mario</span>
+                </div>
+                <div class="badge">
+                    <span>25 mins</span>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    
+
+  <!-- <div class="px-4">
+      <div
+        class="
+          flex
+          justify-center
+          items-center
+          bg-white
+          mx-auto
+          max-w-2xl
+          rounded-lg
+          my-16
+          p-16
+        "
+      >
+        <h1 class="text-2xl font-medium">Responsive Navbar with TailwindCSS</h1>
+      </div>
+    </div> -->
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
